@@ -1,11 +1,81 @@
-<div class="under-construction">
-    <div class="about-overlay">
-        <div class="about-content">
-            <span class="about-label">CPMD</span>
-            <h1 class="about-title">Documentos de mensajes del panel de control</h1>
-            <p class="about-description">
-                Aquí se irán organizando los recursos relacionados a los CPMD de las distintas familias de impresoras.
-            </p>
+<div class="built-in">
+    <div class="documents-page">
+        <div class="documents-header">
+           <div class="docs-title">
+                <h1>CPMD</h1>
+                <p>Documentos de mensajes del panel de control</p>
+            </div>
+            <div class="docs-right">
+                <div class="docs-nav">
+                    <button onclick="loadPage('Pages/cpmd.html')" class="alter-link active">
+                        CPMD
+                    </button>
+
+                    <button onclick="loadPage('Pages/datasheets.html')" class="alter-link">
+                        Hojas de Datos
+                    </button>
+
+                    <button onclick="loadPage('Pages/tutorials.html')"  class="alter-link">
+                        Tutoriales
+                    </button>
+
+                    <button onclick="loadPage('#')" class="alter-link">
+                        Disponible
+                    </button>
+                </div>
+                <div class="docs-toolbar">
+                    <input
+                        type="text"
+                        id="cpmdSearch"
+                        placeholder="Buscar documento..."
+                        onkeyup="filterTable('cpmdSearch','cpmdTable')">
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+            <table class="documents-table" id="cpmdTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>CPMD</th>
+                        <th>Descripción</th>
+                        <th>Estado</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Color Laserjet Enterprise & Managed 600</td>
+                        <td>M652, M653, M681, M682, E65050, E65060, E65150, E65160, E67550, E67560, E67650, E67660</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/CPMD/CPMD - Series Color 600.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Laserjet Enterprise & Managed 600</td>
+                        <td>M607, M608, M609, M682, E60055, E60065, E60075, E60155, E60165, E60175</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/CPMD/CPMD - Series 600.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

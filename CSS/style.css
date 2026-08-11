@@ -295,6 +295,19 @@ body{
     align-items:center;
 }
 
+.built-in{
+    position:relative;
+    width:100%;
+    min-height:90vh;
+    border-radius:12px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    justify-content:center;
+    align-items:center;
+}
+
 /* Capa oscura para proteger la lectura */
 
 .about-overlay{
@@ -369,10 +382,191 @@ body{
     transform: translateY(-30px);
 }
 
-.page-enter{
-    opacity: 0;
-    transform: translateY(50px);
-    animation: slideUpPage 0.5s ease forwards;
+/* HEADER CPMD & DS-SM*/
+
+.documents-page{
+    background:#ffffff;
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+    width:100%;
+}
+
+.documents-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.docs-title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.docs-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.docs-title p{
+    color:#64748b;
+    font-size:1.1rem;
+}
+
+/* BOTONES SUPERIORES */
+
+.docs-nav{
+    display:flex;
+    gap:12px;
+}
+
+.docs-nav button{
+    background:#F3F4F6;
+    border:none;
+    border-radius:12px;
+    padding:12px 18px;
+    cursor:pointer;
+    font-size:0.95rem;
+    font-weight:500;
+    color:#374151;
+    transition:all .3s ease;
+}
+
+.docs-nav button:hover{
+    background:#024AD8;
+    color:#ffffff;
+}
+
+.alter-link.active{
+    background:#024AD8;
+    color:#fff;
+}
+
+/* TOOLBAR */
+
+.docs-toolbar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* SEARCH */
+
+.docs-toolbar input{
+    width:320px;
+    height:46px;
+    border:1px solid #E5E7EB;
+    border-radius:12px;
+    padding:0 16px;
+    outline:none;
+    background:#FAFAFA;
+    font-size:0.95rem;
+    color:#374151;
+}
+
+.docs-toolbar input:focus{
+    border-color:#024AD8;
+    background:#fff;
+}
+
+/* TABLE CONTAINER */
+
+.table-container{
+    marign-top:20px;
+    background:#ffffff;
+    border-radius:16px;
+    overflow:hidden;
+    border:1px solid #E5E7EB;
+}
+
+/* TABLE */
+
+.documents-table{
+    width:100%;
+    border-collapse:collapse;
+    table-layout: fixed;
+}
+
+.documents-table thead{
+    background:#F8F9FB;
+}
+
+.documents-table th{
+    padding:18px;
+    text-align:left;
+    font-size:0.95rem;
+    font-weight:600;
+    color:#374151;
+}
+
+.documents-table th:nth-child(1){
+    width:80px;
+}
+
+.documents-table th:nth-child(2){
+    width:300px;
+}
+
+.documents-table th:nth-child(3){
+    width:auto;
+}
+
+.documents-table th:nth-child(4){
+    width:160px;
+}
+
+.documents-table th:nth-child(5){
+    width:180px;
+}
+
+.documents-table td{
+    padding:18px;
+    border-top:1px solid #F1F1F1;
+    color:#4B5563;
+    font-size:0.95rem;
+}
+
+/* HOVER FILAS */
+
+.documents-table tbody tr:hover{
+    background:#F8FBFF;
+}
+
+/* STATUS */
+
+.status-available{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:100px;
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:.85rem;
+    font-weight:500;
+    background:#DDF8E8;
+    color:#16A34A;
+}
+
+/* DOWNLOAD BUTTON */
+
+.download-btn{
+    display:inline-block;
+    background: var:(--color-bg-secondary);
+    color: var(--color-text-primary);
+    text-decoration:none;
+    padding:8px 16px;
+    border-radius:10px;
+    font-size:0.90rem;
+    font-weight:500;
+    transition:.3s ease;
+}
+
+.download-btn:hover{
+    background:#0138A6;
+    color:#ffffff;
 }
 
 
@@ -427,6 +621,34 @@ body{
     .about-description{
         font-size: 18px;
     }
+
+    .docs-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .docs-nav{
+        flex-wrap:wrap;
+    }
+
+    .docs-toolbar{
+        justify-content:flex-start;
+    }
+
+    .docs-toolbar input{
+        width:100%;
+        max-width:400px;
+    }
+
+    .table-container{
+        overflow-x:auto;
+    }
+
+    .documents-table{
+        min-width:900px;
+    }
+
 }
 
 @keyframes slideUpPage {
@@ -442,3 +664,4 @@ body{
     }
 
 }
+

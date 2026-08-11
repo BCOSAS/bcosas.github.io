@@ -43,3 +43,29 @@ function loadPage(page) {
     }, 300);
 
 }
+
+function filterTable(inputId, tableId){
+
+    const filter =
+        document.getElementById(inputId)
+        .value
+        .toUpperCase();
+
+    const rows =
+        document.querySelectorAll(
+            `#${tableId} tbody tr`
+        );
+
+    rows.forEach(row => {
+
+        const text =
+            row.textContent.toUpperCase();
+
+        row.style.display =
+            text.includes(filter)
+            ? ""
+            : "none";
+
+    });
+
+}
