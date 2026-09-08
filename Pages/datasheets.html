@@ -1,11 +1,231 @@
-<div class="under-construction">
-    <div class="about-overlay">
-        <div class="about-content">
-            <span class="about-label">HOJAS DE DATOS</span>
-            <h1 class="about-title">Documentación técnica y hojas de referencia</h1>
-            <p class="about-description">
-                En esta sección se concentrarán las hojas de datos, fichas técnicas y referencias rápidas para consulta.
-            </p>
+<div class="built-in">
+    <div class="documents-page">
+        <div class="documents-header">
+           <div class="docs-title">
+                <h1>Hojas de Datos</h1>
+                <p>Especificaciones técnicas, rendimiento, límites de operación y las características físicas</p>
+            </div>
+            <div class="docs-right">
+                <div class="docs-nav">
+                    <button onclick="loadPage('Pages/cpmd.html')" class="alter-link">
+                        CPMD
+                    </button>
+
+                    <button onclick="loadPage('Pages/datasheets.html')" class="alter-link active">
+                        Hojas de Datos
+                    </button>
+
+                    <button onclick="loadPage('Pages/tutorials.html')"  class="alter-link">
+                        Tutoriales
+                    </button>
+
+                    <button onclick="loadPage('#')" class="alter-link">
+                        Disponible
+                    </button>
+                </div>
+                <div class="docs-toolbar">
+                    <input
+                        type="text"
+                        id="cpmdSearch"
+                        placeholder="Buscar documento..."
+                        onkeyup="filterTable('cpmdSearch','cpmdTable')">
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+            <table class="documents-table" id="cpmdTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Hoja de Datos</th>
+                        <th>Descripción</th>
+                        <th>Estado</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>HP LaserJet Managed MFP E40040</td>
+                        <td>Resumen de la función principal y el propósito de la multifuncional E40040</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/Datasheets/Datasheet - E40040.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>HP LaserJet Managed MFP E42540</td>
+                        <td>Resumen de la función principal y el propósito de la multifuncional E42540</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/Datasheets/Datasheet - E42540.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>HP Color LaserJet Managed MFP E47528</td>
+                        <td>Resumen de la función principal y el propósito de la multifuncional E47528</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/Datasheets/Datasheet - E47528.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>HP LaserJet Managed MFP E50145</td>
+                        <td>Resumen de la función principal y el propósito de la multifuncional E50145</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/Datasheets/Datasheet - E50145.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>HP LaserJet Managed MFP E52645</td>
+                        <td>Resumen de la función principal y el propósito de la multifuncional E52645</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/Datasheets/Datasheet - E52645.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>006</td>
+                        <td>HP Color LaserJet Managed MFP E57540</td>
+                        <td>Resumen de la función principal y el propósito de la multifuncional E57540</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/Datasheets/Datasheet - E57540.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>007</td>
+                        <td>HP LaserJet Managed MFP E60155</td>
+                        <td>Resumen de la función principal y el propósito de la multifuncional E60155</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/Datasheets/Datasheet - E60155.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>008</td>
+                        <td>HP LaserJet Managed MFP E62655</td>
+                        <td>Resumen de la función principal y el propósito de la multifuncional E62655</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/Datasheets/Datasheet - E62655.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>009</td>
+                        <td>HP LaserJet Managed MFP E62665</td>
+                        <td>Resumen de la función principal y el propósito de la multifuncional E62665</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/Datasheets/Datasheet - E62665.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>010</td>
+                        <td>HP Color LaserJet Managed MFP E786dn</td>
+                        <td>Resumen de la función principal y el propósito de la multifuncional</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/Datasheets/Datasheet - E786.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>011</td>
+                        <td>HP Color LaserJet Managed MFP E876</td>
+                        <td>Resumen de la función principal y el propósito de las multifuncionales E87640 - E87650 - E87660</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/Datasheets/Datasheet - E876.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>012</td>
+                        <td>HP LaserJet Managed MFP X677</td>
+                        <td>Resumen de la función principal y el propósito de la multifuncional X677</td>
+                        <td>
+                            <span class="status-available">
+                                Disponible
+                            </span>
+                        </td>
+                        <td>
+                            <a href="assets/Datasheets/Datasheet - X677.pdf" class="download-btn" target="_blank">
+                                Descargar
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
