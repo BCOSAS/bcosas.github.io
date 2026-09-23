@@ -517,15 +517,15 @@ body{
 }
 
 .documents-table th:nth-child(2){
-    width:300px;
+    width:350px;
 }
 
 .documents-table th:nth-child(3){
-    width:auto;
+    width:200px;
 }
 
 .documents-table th:nth-child(4){
-    width:160px;
+    width:180px;
 }
 
 .documents-table th:nth-child(5){
