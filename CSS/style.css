@@ -486,6 +486,7 @@ body{
 
 .table-container{
     marign-top:20px;
+    margin-bottom:10px;
     background:#ffffff;
     border-radius:16px;
     overflow:hidden;
@@ -517,19 +518,19 @@ body{
 }
 
 .documents-table th:nth-child(2){
-    width:350px;
+    width:300px;
 }
 
 .documents-table th:nth-child(3){
-    width:200px;
+    width:250px;
 }
 
 .documents-table th:nth-child(4){
-    width:180px;
+    width:160px;
 }
 
 .documents-table th:nth-child(5){
-    width:180px;
+    width:160px;
 }
 
 .documents-table td{
@@ -590,6 +591,11 @@ body{
 .download-btn:hover{
     background:#0138A6;
     color:#ffffff;
+}
+
+.description{
+    text-decoration:none;
+    list-style:none;
 }
 
 

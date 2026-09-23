@@ -1,0 +1,146 @@
+<div class="built-in">
+    <div class="documents-page">
+        <div class="documents-header">
+           <div class="docs-title">
+                <h1>HP Numerales</h1>
+                <p>Numerales para la creación de casos en plataforma DCC | MSCC</p>
+                <p>Mantener la estructura: #/Cuenta/Site/Serial/falla</p>
+            </div>
+            <div class="docs-toolbar">
+                    <input
+                        type="text"
+                        id="cpmdSearch"
+                        placeholder="Buscar documento..."
+                        onkeyup="filterTable('cpmdSearch','cpmdTable')">
+            </div>
+        </div>
+        <div class="docs-title">
+                <p>Atención por Canal Soporte</p>
+        </div>
+        <div class="table-container">
+            <table class="documents-table" id="cpmdTable">
+                <thead>
+                    <tr>
+                        <th>Actividad</th>
+                        <th>Numeral</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">B&F</td>
+                        <td>#SUBK</td>
+                        <td>
+                            <ul>
+                                <li class="description">Solicitudes de visita a sede donde OSA no se encuentra disponible o se requiere mayor atención a fallas con inspección dedicada.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#SUBK#PROACTIVE</td>
+                        <td>
+                            <ul>
+                                <li class="description">Solicitudes de visita a sede para instalación de Kits (Mantenimiento - ADF)
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+        <div class="docs-title">
+                <p>Atención por OSA</p>
+        </div>
+        <div class="table-container">
+            <table class="documents-table" id="cpmdTable">
+                <thead>
+                    <tr>
+                        <th>Actividad</th>
+                        <th>Numeral</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B&F</td>
+                        <td>#OSABF</td>
+                        <td>
+                            <ul>
+                                <li class="description">Solicitud de partes para reparación </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Proactivo</td>
+                        <td>#OSAPROACTIVE#LMU#KIT</td>
+                        <td>
+                            <ul>
+                                <li class="description">Solicitud, monitoreo, trazabilidad, recepción e instalación Kits (mantenimiento - ADF) </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Tareas</td>
+                        <td>#OSATASK#SOL</td>
+                        <td>
+                            <ul>
+                                <li class="description">creación/eliminación Pines</li>
+                                <li class="description">Instalación Impresoras (colas)</li>
+                                <li class="description">Configuración Escaneo</li>
+                                <li class="description">PullPrint (Celiveo - HPAC - HPAD - Papercut - NDD) </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> #OSATASK#IMAC</td>
+                        <td>
+                            <ul>
+                                <li class="description">Documentación (IBR - Manuales)</li>
+                                <li class="description">Manejo de base instalada</li>
+                                <li class="description">Atención y resolucion de NRD (automaticos y manuales)</li>
+                                <li class="description">Movimiento de equipos</li>
+                                <li class="description">cargue de papel</li>
+                                <li class="description">Cargue de contadores manuales</li>
+                                <li class="description">Solicitud, monitoreo, recepción, entrega y devolución de Suministros (tóner - Kits) ~ Planet Partners</li>
+                                <li class="description">Exportado de contadores WJA</li>
+                                <li class="description">Verificación de Tracking</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Remove & Resolve</td>
+                        <td>#OSARR#PJAM </td>
+                        <td>
+                            <ul>
+                                <li class="description">Atascos de Papel.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#OSARR#PRINTQ </td>
+                        <td>
+                            <ul>
+                                <li class="description">Resolución de Novedades en Impresión (Impresión Fantasma, ilegible, etc.) </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#OSARR#CONFIG </td>
+                        <td>
+                            <ul>
+                                <li class="description">Solución en fallas relacionadas a: Firmware (congelado - instalación - reinstalación)</li>
+                                <li class="description">Bandejas (tamaños - reconocimiento) </li>
+                                <li class="description">Impresión Lenta </li>
+                                <li class="description">Escaneo (Paginas en Blanco o Negro total) </li>
+                                <li class="description">Impresión (dúplex) </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+</div>
