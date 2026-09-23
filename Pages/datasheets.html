@@ -1,11 +1,6 @@
 <div class="built-in">
-    <div class="documents-page">
-        <div class="documents-header">
-           <div class="docs-title">
-                <h1>Hojas de Datos</h1>
-                <p>Especificaciones técnicas, rendimiento, límites de operación y las características físicas</p>
-            </div>
-            <div class="docs-right">
+
+    <div class="docs-right">
                 <div class="docs-nav">
                     <button onclick="loadPage('Pages/cpmd.html')" class="alter-link">
                         CPMD
@@ -23,13 +18,20 @@
                         Disponible
                     </button>
                 </div>
-                <div class="docs-toolbar">
-                    <input
-                        type="text"
-                        id="cpmdSearch"
-                        placeholder="Buscar documento..."
-                        onkeyup="filterTable('cpmdSearch','cpmdTable')">
-                </div>
+    </div>
+    <div class="documents-page">
+        <div class="documents-header">
+           <div class="docs-title">
+                <h1>Hojas de Datos</h1>
+                <p>Especificaciones técnicas, rendimiento, límites de operación y las características físicas</p>
+            </div>
+            
+            <div class="docs-toolbar">
+                <input
+                    type="text"
+                    id="cpmdSearch"
+                    placeholder="Buscar documento..."
+                    onkeyup="filterTable('cpmdSearch','cpmdTable')">
             </div>
         </div>
         <div class="table-container">
