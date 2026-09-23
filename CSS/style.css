@@ -560,6 +560,19 @@ body{
     color:#16A34A;
 }
 
+.status-unavailable{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:100px;
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:.85rem;
+    font-weight:500;
+    background:#FEE2E2;
+    color:#DC2626;
+}
+
 /* DOWNLOAD BUTTON */
 
 .download-btn{
