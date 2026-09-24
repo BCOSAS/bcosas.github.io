@@ -1,11 +1,50 @@
-<div class="under-construction">
-    <div class="about-overlay">
-        <div class="about-content">
-            <span class="about-label">TUTORIALES</span>
-            <h1 class="about-title">Guías paso a paso</h1>
-            <p class="about-description">
-                Esta sección estará disponible para publicar tutoriales, pasos de instalación y procesos operativos.
-            </p>
+ <div class="built-in"> 
+    <div class="docs-right">
+               <div class="docs-nav">
+                   <button onclick="loadPage('Pages/cpmd.html')" class="alter-link">
+                       CPMD
+                   </button>
+                    <button onclick="loadPage('Pages/datasheets.html')" class="alter-link">
+                       Hojas de Datos
+                   </button>
+                    <button onclick="loadPage('Pages/tutorials.html')"  class="alter-link active">
+                       Tutoriales
+                   </button>
+                    <button onclick="loadPage('Pages/Available-UC.html')" class="alter-link">
+                       Proximamente
+                   </button>
+               </div>
+    </div>
+        <!-- Novedades -->
+    <div class="documents-header">
+        <div class="docs-title">
+            <h1>HP Novedades</h1>
         </div>
     </div>
-</div>
+    <main class="main-container">
+        <!-- Reproductor Principal de Video (560x315) -->
+        <section class="video-section">
+        <div class="video-container">
+            <iframe 
+            id="main-player"
+            src="https://www.youtube.com/embed/videoseries?si=udjDIZ4Js1BzHV_W&amp;list=PLUsWwDNIcHnUz8rI7J22a-JbY-zwT_yTo" 
+            title="Reproductor de YouTube"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+            </iframe>
+        </div>
+        </section>
+        <!-- Lista de Episodios Extraída Dinámicamente -->
+        <aside class="episodes-container">
+        <div class="sidebar-header-tutorials">
+            <span class="sidebar-title-tutorials">Lista de reproducción</span>
+            <span class="badge" id="episode-count-1">Cargando...</span>
+        </div>
+
+        <div class="episodes-list" id="episodes-list-1">
+            <!-- Los episodios de la lista de YouTube se insertan aquí vía JavaScript -->
+        </div>
+        </aside>
+  </main>
+</div>   

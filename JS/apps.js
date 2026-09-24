@@ -16,15 +16,16 @@ function loadPage(page) {
         fetch(page)
             .then(response => response.text())
             .then(html => {
-
                 content.innerHTML = `
                     <div class="page-enter">
-                        ${html}
-                    </div>
-                `;
-
-                content.classList.remove("page-exit");
-
+                     ${html}
+                     </div>`;
+                content.classList.remove("page-exit");    // TUTORIALES
+                if(page.includes("tutorials")){
+                   setTimeout(() => {
+                        loadYouTubePlaylist(PLAYLIST_ID);
+                }, 300);
+             }
             })
             .catch(error => {
 
